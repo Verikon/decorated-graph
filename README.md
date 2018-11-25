@@ -1,7 +1,7 @@
 A GraphQL client written in typescript, consumable through decorators.
 
-`
-import {GQLprop} from 'decorated-graph';
+Usage:
+```import {GQLprop} from 'decorated-graph';
 
 class Myclass {
 
@@ -9,14 +9,13 @@ class Myclass {
 
   async myMethod() {
 
-    const query = `{a:{b c d}}`;
+    const query = '{a:{b c d}}';
     const result = await this.gql.query({query});
     
     //returns
     //{success:true, data: {a:{b:1, c:1, d:1}}
   }
-}
-`
+}```
 
 GQLprop
 A property decorator is provided to instantiate the client.
